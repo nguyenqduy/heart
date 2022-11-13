@@ -10,4 +10,10 @@ deploy
 
 3 go cd Documents/tim/
 
+4 git add .
 
+5 git commit -m 'add'
+
+6 git push
+
+7 settings > pages 
