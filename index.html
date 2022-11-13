@@ -39,6 +39,7 @@
             transform: translate(-50%, -50%);
             display: flex;
             flex-direction: column;
+            z-index: -1;
         }
 
         .text {
@@ -108,6 +109,33 @@
             transform-origin: 100% 100%;
         }
 
+        #image1,
+        #image2 {
+            position: absolute;
+            top: 53%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        #image1 {
+            top: 53%;
+            left: 24%;  
+        }
+        /* #image1:hover {
+            transform:rotate(-10deg) scale(1.2);
+        } */
+
+        #image2 {
+            top: 53%;
+            left: 76%;
+        }
+        /* #image2:hover {
+            transform:rotate(-10deg) scale(1.2);
+        } */
+
         @keyframes animate {
             0% {
                 transform: scale(1);
@@ -166,11 +194,15 @@
     </style>
 </head>
 
-<audio controls >
+<audio controls>
     <source src="bg-music.mp3" type="audio/mpeg">
 </audio>
 
 <body>
+    <img id="image1" src="image1.jpg" alt="hinh 1">
+
+    <img id="image2" src="image1.jpg" alt="hinh 2">
+
     <div class="box">
         <canvas id="pinkboard"></canvas>
         <p class="text">I love you 3000</p>
@@ -456,6 +488,3 @@
 
 </html>
 
-<!-- muon doi mau thi chinh dong 401 -->
-
-<!-- muon thay nhac doi dong 170 -->
